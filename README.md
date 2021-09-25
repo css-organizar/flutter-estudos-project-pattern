@@ -46,7 +46,7 @@ dependencies:
     sdk: flutter  <-------------- Adicionado
 
   cupertino_icons: ^1.0.2
-  get: ^4.3.8  <----------------- Adicionado
+  get:  <------------------------ Adicionado
 
 dev_dependencies:
   flutter_test:
