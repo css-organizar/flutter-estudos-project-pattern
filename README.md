@@ -22,7 +22,7 @@
 
 * Aplicação base Flutter
 * Aplicação base Flutter com GetX
-  * Injeção de Dependências
   * Navegação com Rotas
   * Route Observers
+  * Injeção de Dependências
   * Gerenciamento de Estados
