@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:widget_factory/presentation/views/configuration/configuration_binding.dart';
+import 'package:widget_factory/presentation/views/configuration/configuration_view.dart';
 import 'package:widget_factory/presentation/views/home/home_binding.dart';
 import 'package:widget_factory/presentation/views/home/home_view.dart';
 
@@ -15,6 +17,16 @@ class ApplicationPages {
       },
       bindings: [
         HomeBinding(),
+      ],
+      transition: Transition.fadeIn,
+    ),
+    GetPage(
+      name: ApplicationRoutes.configurationView,
+      page: () {
+        return ConfigurationView();
+      },
+      bindings: [
+        ConfigurationBinding(),
       ],
       transition: Transition.fadeIn,
     ),
