@@ -20,22 +20,9 @@ class _HomeViewState extends State<HomeView> with RouteAware {
   }
 
   @override
-  void dispose() {
-    Get.find<RouteObserver>().unsubscribe(this);
-    super.dispose();
-    debugPrint('HomeView - dispose');
-  }
-
-  @override
-  void reassemble() {
-    super.reassemble();
-    debugPrint('HomeView - reassemble');
-  }
-
-  @override
-  void deactivate() {
-    super.deactivate();
-    debugPrint('HomeView - deactivate');
+  void activate() {
+    super.activate();
+    debugPrint('HomeView - activate');
   }
 
   @override
@@ -51,23 +38,14 @@ class _HomeViewState extends State<HomeView> with RouteAware {
   }
 
   @override
-  void didPopNext() {
-    debugPrint('HomeView - didPopNext');
+  void reassemble() {
+    super.reassemble();
+    debugPrint('HomeView - reassemble');
   }
 
   @override
   void didPush() {
     debugPrint('HomeView - didPush');
-  }
-
-  @override
-  void didPop() {
-    debugPrint('HomeView - didPop');
-  }
-
-  @override
-  void didPushNext() {
-    debugPrint('HomeView - didPushNext');
   }
 
   @override
@@ -92,5 +70,33 @@ class _HomeViewState extends State<HomeView> with RouteAware {
         ),
       ),
     );
+  }
+
+  @override
+  void didPushNext() {
+    debugPrint('HomeView - didPushNext');
+  }
+
+  @override
+  void didPopNext() {
+    debugPrint('HomeView - didPopNext');
+  }
+
+  @override
+  void didPop() {
+    debugPrint('HomeView - didPop');
+  }
+
+  @override
+  void deactivate() {
+    super.deactivate();
+    debugPrint('HomeView - deactivate');
+  }
+
+  @override
+  void dispose() {
+    Get.find<RouteObserver>().unsubscribe(this);
+    super.dispose();
+    debugPrint('HomeView - dispose');
   }
 }

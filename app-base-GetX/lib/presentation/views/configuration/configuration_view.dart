@@ -19,22 +19,9 @@ class _ConfigurationViewState extends State<ConfigurationView> with RouteAware {
   }
 
   @override
-  void dispose() {
-    Get.find<RouteObserver>().unsubscribe(this);
-    super.dispose();
-    debugPrint('ConfigurationView - dispose');
-  }
-
-  @override
-  void reassemble() {
-    super.reassemble();
-    debugPrint('ConfigurationView - reassemble');
-  }
-
-  @override
-  void deactivate() {
-    super.deactivate();
-    debugPrint('ConfigurationView - deactivate');
+  void activate() {
+    super.activate();
+    debugPrint('ConfigurationView - activate');
   }
 
   @override
@@ -50,23 +37,14 @@ class _ConfigurationViewState extends State<ConfigurationView> with RouteAware {
   }
 
   @override
-  void didPopNext() {
-    debugPrint('ConfigurationView - didPopNext');
+  void reassemble() {
+    super.reassemble();
+    debugPrint('ConfigurationView - reassemble');
   }
 
   @override
   void didPush() {
     debugPrint('ConfigurationView - didPush');
-  }
-
-  @override
-  void didPop() {
-    debugPrint('ConfigurationView - didPop');
-  }
-
-  @override
-  void didPushNext() {
-    debugPrint('ConfigurationView - didPushNext');
   }
 
   @override
@@ -79,5 +57,33 @@ class _ConfigurationViewState extends State<ConfigurationView> with RouteAware {
       ),
       body: Container(),
     );
+  }
+
+  @override
+  void didPushNext() {
+    debugPrint('ConfigurationView - didPushNext');
+  }
+
+  @override
+  void didPopNext() {
+    debugPrint('ConfigurationView - didPopNext');
+  }
+
+  @override
+  void didPop() {
+    debugPrint('ConfigurationView - didPop');
+  }
+
+  @override
+  void deactivate() {
+    super.deactivate();
+    debugPrint('ConfigurationView - deactivate');
+  }
+
+  @override
+  void dispose() {
+    Get.find<RouteObserver>().unsubscribe(this);
+    super.dispose();
+    debugPrint('ConfigurationView - dispose');
   }
 }
