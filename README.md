@@ -42,11 +42,11 @@ pubspec.yaml
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
+  flutter_localizations:  <------ Adicionado
+    sdk: flutter  <-------------- Adicionado
 
   cupertino_icons: ^1.0.2
-  get: ^4.3.8
+  get: ^4.3.8  <----------------- Adicionado
 
 dev_dependencies:
   flutter_test:
