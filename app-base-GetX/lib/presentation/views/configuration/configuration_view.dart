@@ -40,8 +40,13 @@ class _ConfigurationViewState extends State<ConfigurationView> with RouteAware {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+
     debugPrint('ConfigurationView - didChangeDependencies');
-    Get.find<RouteObserver>().subscribe(this, ModalRoute.of(context) as PageRoute);
+
+    Get.find<RouteObserver>().subscribe(
+      this,
+      ModalRoute.of(context) as PageRoute,
+    );
   }
 
   @override

@@ -40,8 +40,13 @@ class _HomeViewState extends State<HomeView> with RouteAware {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+
     debugPrint('HomeView - didChangeDependencies');
-    Get.find<RouteObserver>().subscribe(this, ModalRoute.of(context) as PageRoute);
+
+    Get.find<RouteObserver>().subscribe(
+      this,
+      ModalRoute.of(context) as PageRoute,
+    );
   }
 
   @override

@@ -12,11 +12,8 @@ class ApplicationWidget extends StatefulWidget {
 }
 
 class _ApplicationWidgetState extends State<ApplicationWidget> {
-  final routeObserver = Get.put<RouteObserver>(RouteObserver<PageRoute>());
-
   @override
   Widget build(BuildContext context) {
-    final routeObserver = Get.put<RouteObserver>(RouteObserver<PageRoute>());
     return GetMaterialApp(
       title: 'Estrutura Báse de App com GetX',
       debugShowCheckedModeBanner: false,
@@ -27,7 +24,7 @@ class _ApplicationWidgetState extends State<ApplicationWidget> {
       ),
       navigatorKey: Get.key,
       navigatorObservers: [
-        routeObserver,
+        Get.find<RouteObserver>(),
       ],
       getPages: ApplicationPages.routes,
       initialRoute: ApplicationPages.initialRoute,
