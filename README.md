@@ -51,4 +51,5 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: <--------------- Adicionado
 ```
