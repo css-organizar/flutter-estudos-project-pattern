@@ -10,7 +10,7 @@
     * widgets
   * domain
     * entities
-    * iterfaces
+    * interfaces
   * infrastructure
     * repositories
     * resources
