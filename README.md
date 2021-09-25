@@ -20,9 +20,13 @@
 
 ## Exemplos Apresentados
 
-### Aplicação base Flutter
+### app-base: Aplicação base Flutter
 
-### Aplicação base Flutter com GetX
+Exemplo de estrutura simples de aplicação flutter
+
+### app-base-getx: Aplicação base Flutter com GetX
+
+Exemplo de estrutura de aplicação flutter utilizando o package GetX
 
 pubspec.yaml
 
