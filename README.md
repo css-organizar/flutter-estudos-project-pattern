@@ -1,5 +1,7 @@
 # Exemplos de Estrutura de Aplicativos com Flutter
 
+Repositório de projetos simples para implementação de estrutura de pastas de um aplicativo com flutter.
+
 ## Estrutura de Pastas
 
 * lib
