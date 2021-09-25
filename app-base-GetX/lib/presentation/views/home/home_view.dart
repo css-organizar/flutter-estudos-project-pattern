@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:widget_factory/application/application_pages.dart';
-import 'package:widget_factory/presentation/views/home/home_controller.dart';
+
+import '../../../application/application_pages.dart';
+import 'home_controller.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);

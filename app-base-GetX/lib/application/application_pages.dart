@@ -1,8 +1,9 @@
 import 'package:get/get.dart';
-import 'package:widget_factory/presentation/views/configuration/configuration_binding.dart';
-import 'package:widget_factory/presentation/views/configuration/configuration_view.dart';
-import 'package:widget_factory/presentation/views/home/home_binding.dart';
-import 'package:widget_factory/presentation/views/home/home_view.dart';
+
+import '../presentation/views/configuration/configuration_binding.dart';
+import '../presentation/views/configuration/configuration_view.dart';
+import '../presentation/views/home/home_binding.dart';
+import '../presentation/views/home/home_view.dart';
 
 part 'application_routes.dart';
 

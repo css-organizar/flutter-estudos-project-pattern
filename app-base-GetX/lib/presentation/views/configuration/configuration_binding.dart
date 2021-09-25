@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+
 import 'configuration_controller.dart';
 
 class ConfigurationBinding implements Bindings {
