@@ -28,6 +28,12 @@ Exemplo de estrutura simples de aplicação flutter
 
 Exemplo de estrutura de aplicação flutter utilizando o package GetX
 
+* Recursos Apresentados
+  * Navegação com Rotas
+  * Route Observers
+  * Injeção de Dependências
+  * Gerenciamento de Estados
+
 pubspec.yaml
 
 ```
@@ -44,9 +50,3 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 ```
-
-* Recursos Utilizados
-  * Navegação com Rotas
-  * Route Observers
-  * Injeção de Dependências
-  * Gerenciamento de Estados
